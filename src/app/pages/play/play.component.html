@@ -1,0 +1,56 @@
+<div class="flex flex-col justify-center items-center h-screen">
+  <div
+    class="flex flex-col w-full max-w-3xl p-6 mx-auto space-y-8 bg-gray-50 border rounded-lg shadow-lg border-gray-100"
+    *ngIf="quiz$ | async as quiz"
+  >
+    <div class="p-6 pb-4 text-center bg-gray-200 rounded-lg">
+      <h1 class="mb-2 text-2xl">
+        Category: <span [innerHTML]="quiz.category"></span>
+      </h1>
+      <p class="text-gray-500">
+        Question {{ currentQuestionIndex + 1 }} of {{ quiz.questions.length }}
+      </p>
+    </div>
+
+    <div class="mb-5">
+      <h2
+        class="mb-4 text-xl font-bold"
+        [innerHTML]="currentQuestion?.question"
+      ></h2>
+
+      <ul class="space-y-4">
+        <li
+          *ngFor="let question of questions"
+          class="flex items-center text-md"
+        >
+          <label class="flex items-center space-x-2">
+            <input
+              type="radio"
+              name="answer"
+              [(ngModel)]="selectedAnswer"
+              [value]="question"
+              class="w-4 h-4"
+            />
+            <span class="text-gray-500" [innerHTML]="question"></span>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="flex justify-between space-x-4">
+      <button
+        class="w-32 px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-400 duration-300 disabled:bg-gray-300 disabled:cursor-not-allowed"
+        (click)="nextQuestion(quiz)"
+        [disabled]="!selectedAnswer"
+      >
+        Continue
+      </button>
+      <button
+        class="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-400 duration-300"
+        (click)="cancelQuiz()"
+      >
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
