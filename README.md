@@ -1,6 +1,6 @@
 # Quizzes App
 
-- [DEMO](https://quizzes-app.vercel.app/)
+- [DEMO](https://quizzes-app-one.vercel.app/)
 
 ## Project Overview
 
