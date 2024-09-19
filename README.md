@@ -14,6 +14,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
    ```
    git clone https://github.com/nk8bnj/quizzes-app.git
    ```
+   or
+   ```
+   git clone git@github.com:nk8bnj/quizzes-app.git
+   ```
 
 2. Navigate to the project directory:
 
