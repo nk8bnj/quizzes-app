@@ -1,11 +1,10 @@
 # Quizzes App
 
-- [DEMO](https://quizzes-app.vercel.app/)
+- [DEMO](https://quizzes-app-one.vercel.app/)
 
 ## Project Overview
 
-"Quizzes Applilication" - get questions and answers from the API and create random quizzes.
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1
+The "Quizzes Application" is an interactive platform built with Angular (CLI version 18.2.1) that dynamically generates random quizzes by fetching questions and answers from an external API. The application allows users to engage with quizzes on a variety of topics, offering a seamless and responsive user experience.
 
 ## Setup and Run
 
@@ -13,6 +12,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
    ```
    git clone https://github.com/nk8bnj/quizzes-app.git
+   ```
+   or
+   ```
+   git clone git@github.com:nk8bnj/quizzes-app.git
    ```
 
 2. Navigate to the project directory:
