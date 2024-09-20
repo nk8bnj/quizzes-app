@@ -7,7 +7,7 @@ import { preparedQuizzes } from '../helpers/prepared-quizzes.helper'
 import { Quiz, Question } from '../types/quiz.interface'
 
 const AMOUNT_OF_QUIZZES = 10
-const AMOUNT_OF_QUESTIONS = 30
+const AMOUNT_OF_QUESTIONS = 50
 
 const URL = `https://opentdb.com/api.php?amount=${AMOUNT_OF_QUESTIONS}`
 
