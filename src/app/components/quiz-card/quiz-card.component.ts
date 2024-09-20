@@ -1,14 +1,14 @@
-import { Component, Input } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, Input } from '@angular/core'
+import { RouterModule } from '@angular/router'
 
-import { Quiz } from '../../types/quiz.interface';
+import { Quiz } from '../../types/quiz.interface'
 
 @Component({
-  selector: 'app-quiz-card',
-  standalone: true,
-  imports: [RouterModule],
-  templateUrl: './quiz-card.component.html',
+	selector: 'app-quiz-card',
+	standalone: true,
+	imports: [RouterModule],
+	templateUrl: './quiz-card.component.html'
 })
 export class QuizCardComponent {
-  @Input() quiz!: Quiz;
+	@Input() quiz!: Quiz
 }
